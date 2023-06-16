@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hidelog">
+            <div class="box">
+                <div class="img">
+                    <img src="./multimedia/login.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h1>CHILD PORTAL</h1>
+                    <div class="log_reg">
+                        <button class="dark" id="reg" onclick="regpage()">Register</button>
+                        <button class="light" id="log" onclick="logpage()">Log in</button>
+                    </div>
+                    <div class="detail_inp d_none" id="logdet">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <button><a href="child_portal.html">Log in</a></button>
+                    </div>
+                    <div class="detail_inp d_one" id="regdet">
+                        <input type="text" id="name" placeholder="Full name">
+                        <input type="email" placeholder="Email ID">
+                        <input type="date" placeholder="Date of Birth">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <button onclick="register()"><a href="child_portal.html">Register</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="hidereg d_nne">
+            <div class="box">
+                <div class="img">
+                    <img src="./multimedia/login.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h1>CHILD PORTAL</h1>
+                    <div class="log_reg">
+                        <button class="light" id="log">Log in</button>
+                        <button class="dark" id="reg">Register</button>
+                    </div>
+                    <div class="detail_inp">
+                        <input type="text" placeholder="Full name">
+                        <input type="email" placeholder="Email ID">
+                        <input type="date" placeholder="Date of Birth">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <button>Register</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

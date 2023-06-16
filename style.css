@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #F5F2F4;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 900px;
+    height: auto;
+    margin: 50px auto;
+    background-color: #fdfdfd;
+    /* background-color: #00CFC0; */
+    box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.249);
+    border-radius: 12px;
+}
+.box{
+    display: flex;
+    border: 1px solid #0a8f63d4;
+    border-radius: 12px;
+}
+.img{
+    height: 550px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    width: 450px;
+    mix-blend-mode: darken;
+}
+.details{
+    width: 60%;
+    /* background-color: red; */
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 12px 12px 0px;
+    /* border: 1px solid #0a8f62; */
+    /* margin: 20px auto; */
+}
+.log_reg{
+    width: 100%;
+    margin: 30px auto 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.log_reg button{
+    width: 120px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.dark{
+    background-color: #0a8f62;
+    color: white;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.275),
+    0px -4px 4px 0px #ffffffdf;
+}
+.light{
+    background-color: #FDFDFD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.266),
+    0px -4px 4px 0px rgba(255, 255, 255, 0.79);
+}
+.detail_inp{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 40px;
+    width: 100%;
+}
+.detail_inp input{
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    background-color: rgb(221, 221, 221);
+    border: none;
+}
+.detail_inp input:focus{
+    outline-color: #0a8f62;
+    border: none;
+}
+.detail_inp button{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0a8f62;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.275),
+    0px -4px 4px 0px #ffffffdf;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+.detail_inp button a{
+    color: white;
+    text-decoration: none;
+}
+.d_none{
+    display: none;
+}
+/* above mentioned all css code for login and register page */
+
+
+
+/* css for child_portal page */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(15, 134, 102);
+}
+nav h1{
+    font-size: 28px;
+    cursor: pointer;
+}
+nav h1:hover{
+    color: white;
+    text-decoration: underline;
+}
+nav span button, nav span a{
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: 650;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    color: white;
+}
+nav span button:hover, nav span a:hover{
+    color: black;
+}
+
+header{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F2F4;
+    box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.249);
+}
+header span{
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 30px;
+}
+main{
+    width: 100vw;
+}
+.q_box{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: 10px 20px;
+}
+.q_box span{
+    width: 200px;
+    height: 120px;
+    background-color: #0a8f62;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.275),
+    0px -4px 4px 0px #ffffffdf;
+    /* border: 1px solid rgb(80, 9, 161); */
+    padding: 10px 8px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.q_box span p{
+    color: white;
+    font-size: 17px;
+}
+.turtle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.turtle_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.turtle_card img{
+    width: 320px;
+    mix-blend-mode: darken;
+}
+.turtle_card .ques_ans{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.ques_ans span{
+    width: 350px;
+    height: 250px;
+    background-color: #F5F2F4;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.275),
+    0px -4px 4px 0px #ffffffdf;
+    border: 1px solid #0a8f62;
+    padding: 15px 15px;
+    border-radius: 12px;
+}
+.input_card{
+    display: flex;
+    /* width: 350px; */
+    flex-direction: column;
+    gap: 20px;
+}
+.input_card input{
+    height: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(198, 198, 198);
+    border: 1px solid black;
+}
+.input_card input:focus{
+    outline-color: #0a8f62;
+    border: none;
+}
+.input_card p{
+    color: #0a8f62;
+    font-size: 18px;
+    font-weight: 650;
+}
+.input_card button{
+    height: 40px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #0a8f62;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 175px;
+    color: white;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.275),
+    0px -4px 4px 0px #ffffffdf;
+}
+.video{
+    margin-top: 40px;
+}
+.video video{
+    width: 600px;
+    border-radius: 12px;
+}
+.addbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+    margin: 50px 20px 0px 20px;
+    background-color: #F5F2F4;
+    box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.249);
+    border: 1px solid #0a8f62;
+    padding: 20px 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.addbox input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(221, 221, 221);
+}
+.addbox label{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(154, 15, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 650;
+    color: white;
+    cursor: pointer;
+}
+.addbox video{
+    width: 400px;
+    border-radius: 12px;
+}
+.vv{
+    padding: 0px;
+    width: auto;
+    height: 227px;
+}
+.addbox input:focus{
+    outline-color: #0a8f62;
+    border: none;
+}
+.addbox button{
+    width: 28%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #0a8f62;
+    color: white;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.275),
+    0px -4px 4px 0px #ffffffdf;
+}
+.docto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.addbox span{
+    background: transparent;
+    width: 245px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    cursor: not-allowed;
+}

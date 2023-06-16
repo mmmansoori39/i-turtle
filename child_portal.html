@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 id="child">Child Portal</h1>
+      <span>
+        <button id="doctor">Doctor</button>
+        <button id="parent">Parent</button>
+      </span>
+      <span><a href="index.html">Log Out</a></span>
+    </nav>
+    <header>
+      <span>
+        <h1>Welcome</h1>
+        <h4 id="mname">Jasmine</h4>
+      </span>
+    </header>
+    <main class="content">
+      <div class="q_box"></div>
+      <div class="turtle">
+        <div class="turtle_card">
+          <img src="./multimedia/tu2.avif" alt="" />
+          <div class="ques_ans">
+            <span>
+              <p id="rendata">Hello, I am Mr. Turtle. Ask me....🫠🫠</p>
+            </span>
+            <div class="input_card">
+              <p>Ask to Mr. Turtle</p>
+              <input type="text" id="askquestion" placeholder="Write question here" />
+              <button id="ask">Ask Mr Turtle</button>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <video id="video" src="./multimedia/video1.mp4" controls></video>
+        </div>
+      </div>
+    </main>
+    <div class="doc_paren d_none">
+      <div class="docto">
+        <div class="addbox">
+          <h2>Add, Edit and Delete questions and responses for Mr. Turtle</h2>
+          <input type="text" id="question" placeholder="Write question" />
+          <input type="text" id="responses" placeholder="Write responses" />
+          <button id="add">Add</button>
+          <button id="edit">Edit</button>
+          <button id="delete">Delete</button>
+        </div>
+        <div class="addbox">
+          <h2>Add, Edit and Delete multimedia content relevant to diabetes.</h2>
+          <input type="text" id="question" placeholder="Drag or upload your file" readonly style="cursor: not-allowed;" />
+          <input class="d_none" type="file" id="multimedia" onchange="upload()" type="video/mp4" />
+          <label for="multimedia">Choose Video</label>
+          <span><p id="getlink">Upload the video here</p></span>
+        
+        </div>
+        <div class="addbox vv">
+          <video id="addvideo" src="./multimedia/video1.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector('#mname').innerHTML=localStorage.getItem('myname')
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
